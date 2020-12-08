@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>Library Search System</h1>
+    <div class="search-row">
+        <!-- <label class="mr-2">Search Book: </label> -->
+        <input size="52" [(ngModel)]="keyword" placeholder="Type to search book by title, author, or description">
+        <button class="btn btn-primary ml-2" (click)="searchBook()">Search</button>
+    </div>
+    <div class="search-result" *ngIf="books.length > 0">
+        <h3>{{books.length}} {{books.length > 1 ? 'books' : 'book'}} found</h3>
+        <app-book-list [books]="books"></app-book-list>
+    </div>
+    <div class="search-result" *ngIf="books.length == 0 && searchMode">
+        <h3>No book found!</h3>
+    </div>
+</div>

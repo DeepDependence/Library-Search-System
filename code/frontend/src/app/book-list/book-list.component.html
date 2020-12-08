@@ -1,0 +1,20 @@
+<!-- <ul>
+    <li *ngFor="let book of books; index as idx" class="item-entry">
+            <div class="book-title">{{book.title}}</div>
+            <div class="stock">{{book.stock_level}}</div>
+            <div class="book-image"><img src="/assets/images/{{book.image_file}}"></div>
+            <div class="description">{{book.description}}</div>
+    </li>
+</ul> -->
+
+<div class="item-detail item-entry" *ngFor="let book of books">
+    <div class="book-image">
+        <img src = "/assets/images/{{book.image_file}}" width="188" height="267">
+    </div>
+    <div class="book-detail">
+        <div class="book-title">{{ book.title }}</div>
+        <div class="book-author">by {{ book.author }}</div>
+        <div class="book-stock">Stock: {{book.stock_level}}</div>
+        <div class="book-description">{{ book.description }}</div>
+    </div>
+</div>

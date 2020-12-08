@@ -1,0 +1,42 @@
+/* styles related to the detail */
+
+li {
+    list-style: none;
+}
+
+.item-entry {
+    /*margin-left: 20px;*/
+    margin-bottom: 16px;
+    display: flex;
+    padding-bottom: 8px;
+    box-shadow: 0 2px 2px -2px #666;
+}
+.item-detail.item-entry {
+    margin-left: 0;
+}
+
+.item-entry .book-detail {
+    margin-left: 20px;
+}
+
+.item-entry .book-title {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+    color: #171616;
+}
+
+.item-entry .book-author {
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 16px;
+}
+
+.item-entry .book-stock {
+    /* font-size: 1.4rem; */
+    color: #999;
+    margin-bottom: 16px;
+    /* color:#E2231A; */
+}
+.item-entry .book-description {
+
+}
