@@ -1,0 +1,7 @@
+{
+  "host": "database-1.cwqvm1719ggg.us-east-1.rds.amazonaws.com",
+  "user": "admin",
+  "password": "dGT6!34SUL9!",
+  "database": "booklib",
+  "port": 3306
+}
